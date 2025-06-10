@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odin RPS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Game Menu -->
+    <div id="ui--menu">
+        <p style="margin-bottom: 2rem;">Rock, Paper, Scissors!</p>
+        <div>
+            <button class="button--menu button--start">Start</button>
+
+        </div>
+    </div>
+    <!-- Game UI -->
+    <div id="ui--game" class="hidden">
+        <header id="section--header">
+            <div>
+                <p>Player 1: <span id="score--player">0</span></p>
+                <p>Player 2 (CPU): <span id="score--cpu">0</span></p>
+            </div>
+        </header>
+        <section id="section--game" style="text-align: center">
+            <div id="section--choice-display">
+                <p id="message-result"></p>
+                <p>Your choice: <span id="choice--player">...</span></p>
+                <p>Computer choice: <span id="choice--cpu">...</span></p>
+            </div>
+            <div id="section--choices">
+                <button data-choice="rock" class="choice">Rock</button>
+                <button data-choice="paper" class="choice">Paper</button>
+                <button data-choice="scissors" class="choice">Scissors</button>
+            </div>
+        </section>
+    </div>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
